@@ -1,0 +1,280 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/mui.min.css" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" href="vae.css" />
+	</head>
+
+	<body>
+		<div id="app">
+			<div class="mui-content">
+				<dl class="tab">
+					<dt :class="{active:showPanel=='condition'}" v-tap="{method:showConditionPanel}">动 态</dt>
+					<dt :class="{active:showPanel=='journey'}" v-tap="{method:showJourneyPanel}">行 程</dt>
+					<dt :class="{active:showPanel=='state'}" v-tap="{method:showStatePanel}">活 动</dt>	
+				</dl>
+				<div class="ConditionPanel" v-show="showPanel=='condition'">
+					<div class="con_img"></div>
+					<div class="vae_come">
+						<div class="_come">
+							<svg class="icon" aria-hidden="true">
+  								<use xlink:href="#icon-rili"></use>
+							</svg>		
+							<span class="iscome">许嵩来了</span>
+							<div class="more">更多</div>
+							
+							<i class="mui-action-back icon iconfont icon-jiantouyou" ></i>
+						</div>
+						<div class="annouce">
+							<h4>许嵩发表了</h4>
+							<div class="time">
+								<span class="iconfont icon-shijian"></span>
+								<span class="get_time">2019-03-16  17:53:15</span>
+							</div>
+							<div class="vae_content">
+								<div class="vae_photo"></div>
+								<dl>
+									<dt ><p class="vae_text">里面和外面</p></dt>
+									<dt class="vae_name">许嵩</dt>
+								</dl>
+							</div>
+						</div>
+					</div>
+					<dl class="condition_tab">
+						<dt :class="{active:gotoPanel=='all'}" v-tap="{method:showAllPanel}">全部</dt>
+						<dt :class="{active:gotoPanel=='news'}" v-tap="{method:showNewsPanel}">新闻</dt>
+						<dt :class="{active:gotoPanel=='interview'}" v-tap="{method:showInterviewPanel}">专访</dt>
+						<dt :class="{active:gotoPanel=='picture'}" v-tap="{method:showPicturePanel}">图集</dt>
+						<dt :class="{active:gotoPanel=='video'}" v-tap="{method:showVideoPanel}">视频</dt>
+					</dl>
+					<div class="AllPanel" v-show="gotoPanel=='all'">
+						<!--一条信息-->
+						<div class="affiche">
+							<div class="_condition">
+								<div class="news_img"></div>
+								<dl class="_condition_details">
+									<dt><p class="_title">2019许嵩百场生日会开启 全国“寻宝” 征集令</p></dt>
+									<dt><p class="_text">2019许嵩百场生日会开启 各位V家的家人们，转眼间又到我们一年一聚…</p></dt>
+								</dl>			
+							</div>
+							<div class="_condition_circle">
+								<span class="_circle">新闻</span>
+								<svg class="icon" aria-hidden="true">
+  									<use xlink:href="#icon-pinglun"></use>
+								</svg>	
+								<span class="comment_num">666</span>
+								<svg class="icon" aria-hidden="true">
+  									<use xlink:href="#icon-dianzan"></use>
+								</svg>
+								<span class="like_num">3544</span>
+							</div>
+						</div>										
+					</div>
+					<div class="NewsPanel" v-show="gotoPanel=='news'">
+						<p>新闻</p>
+					</div>
+					<div class="InterviewPanel" v-show="gotoPanel=='interview'">
+						<p>专访</p>
+					</div>
+					<div class="PicturePanel" v-show="gotoPanel=='picture'">
+						<p>图集</p>
+					</div>
+					<div class="VideoPanel" v-show="gotoPanel=='video'">
+						<p>视频</p>
+					</div>
+					<div class="_come"></div>
+				</div>
+				<div class="JourneyPanel" v-show="showPanel=='journey'">
+					<div class="journey_picture">
+						<div class="mui-slider">
+  							<div class="mui-slider-group mui-slider-loop">
+   							    <!--支持循环，需要重复图片节点-->
+   								<div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="../img/journey_img/4.png" /></a></div>
+    							<div class="mui-slider-item"><a href="#"><img src="../img/journey_img/1.png" /></a></div>
+    							<div class="mui-slider-item"><a href="#"><img src="../img/journey_img/2.png" /></a></div>
+    							<div class="mui-slider-item"><a href="#"><img src="../img/journey_img/3.png" /></a></div>
+    							<div class="mui-slider-item"><a href="#"><img src="../img/journey_img/4.png" /></a></div>
+    							<!--支持循环，需要重复图片节点-->
+    							<div class="mui-slider-item mui-slider-item-duplicate"><a href="#"><img src="../img/journey_img/1.png" /></a></div>
+  							</div>
+							<!--在轮播中增加圆点，跟group同级-->
+<!-- 						<div class="mui-slider-indicator">
+  								<div class="mui-indicator mui-active"></div>
+  								<div class="mui-indicator"></div>
+  								<div class="mui-indicator"></div>
+  								<div class="mui-indicator"></div>
+  							</div> --> 									
+						</div>						
+					</div>
+					<div class="vae_journey">
+						<div class="journey_top">许嵩的行程</div>
+						<div class="journey_content">
+							<div class="box"></div>
+							<div class="journey_box">
+								<div class="journey_1">
+								<svg class="icon" aria-hidden="true">
+ 									 <use xlink:href="#icon-quan"></use>
+								</svg>
+								<span class="journey_1_content">2019许嵩 [寻宝游戏] 演唱会-沈阳站</span>
+								<!--时间和地点-->
+								<div class="journey_1_ta">
+									<div class="journey_1_time">
+										<span class="iconfont icon-shijian"></span>
+										<span class="jtime">2019-07-30 19:30</span>
+									</div>
+									<div class="journey_1_add">
+										<span class="iconfont icon-didian"></span>
+										<span class="jadd">沈阳</span>
+									</div>
+								</div>
+							</div>
+								<div class="journey_1">
+								<svg class="icon" aria-hidden="true">
+ 									 <use xlink:href="#icon-quan"></use>
+								</svg>
+								<span class="journey_1_content">2019许嵩 [寻宝游戏] 演唱会-合肥站</span>
+								<!--时间和地点-->
+								<div class="journey_1_ta">
+									<div class="journey_1_time">
+										<span class="iconfont icon-shijian"></span>
+										<span class="jtime">2019-07-20 19:30</span>
+									</div>
+									<div class="journey_1_add">
+										<span class="iconfont icon-didian"></span>
+										<span class="jadd">合肥</span>
+									</div>
+								</div>
+							</div>
+								<div class="journey_1">
+								<svg class="icon" aria-hidden="true">
+ 									 <use xlink:href="#icon-quan"></use>
+								</svg>
+								<span class="journey_1_content">2019许嵩 [寻宝游戏] 演唱会-北京站</span>
+								<!--时间和地点-->
+								<div class="journey_1_ta">
+									<div class="journey_1_time">
+										<span class="iconfont icon-shijian"></span>
+										<span class="jtime">2019-07-06 19:30</span>
+									</div>
+									<div class="journey_1_add">
+										<span class="iconfont icon-didian"></span>
+										<span class="jadd">北京</span>
+									</div>
+								</div>
+							</div>
+							</div>
+							<div class="mtime">2019-06</div>
+							<div class="box"></div>
+							<div class="journey_box">
+								<div class="journey_1">
+									<svg class="icon" aria-hidden="true">
+ 									 	<use xlink:href="#icon-quan"></use>
+									</svg>
+									<span class="journey_1_content">2019许嵩 [寻宝游戏] 演唱会-上海站</span>
+									<!--时间和地点-->
+									<div class="journey_1_ta">
+										<div class="journey_1_time">
+											<span class="iconfont icon-shijian"></span>
+											<span class="jtime">2019-06-22 19:30</span>
+										</div>
+										<div class="journey_1_add">
+											<span class="iconfont icon-didian"></span>
+											<span class="jadd">上海</span>
+										</div>
+									</div>
+								</div>
+								<div class="journey_1">
+									<svg class="icon" aria-hidden="true">
+ 									 	<use xlink:href="#icon-quan"></use>
+									</svg>
+									<span class="journey_1_content">2019许嵩 [寻宝游戏] 演唱会-武汉站</span>
+									<!--时间和地点-->
+									<div class="journey_1_ta">
+										<div class="journey_1_time">
+											<span class="iconfont icon-shijian"></span>
+											<span class="jtime">2019-06-08 19:30</span>
+										</div>
+										<div class="journey_1_add">
+											<span class="iconfont icon-didian"></span>
+											<span class="jadd">武汉</span>
+										</div>
+									</div>
+								</div>
+								<div class="journey_1">
+									<svg class="icon" aria-hidden="true">
+ 									 	<use xlink:href="#icon-quan"></use>
+									</svg>
+									<span class="journey_1_content">2019许嵩 [寻宝游戏] 演唱会-成都站</span>
+									<!--时间和地点-->
+									<div class="journey_1_ta">
+										<div class="journey_1_time">
+											<span class="iconfont icon-shijian"></span>
+											<span class="jtime">2019-06-01 19:30</span>
+										</div>
+										<div class="journey_1_add">
+											<span class="iconfont icon-didian"></span>
+											<span class="jadd">成都</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="StatePanel" v-show="showPanel=='state'">
+					<div class="state_img"></div>
+					<div class="search">
+						<div class="state_select">
+							<select>
+								<option value="state_all">全部活动</option>
+								<option value="state_here">附近活动</option>
+							</select>
+							<span class="iconfont icon-downarr"></span>
+						</div>
+						<div class="search_box">
+							<svg class="icon" aria-hidden="true">
+  								<use xlink:href="#icon-sousuo"></use>
+							</svg>
+							<input type="text" placeholder="   搜索城市或者活动" />
+						</div>	
+					</div>
+					<div class="state_1">
+						<div class="state_1_img"></div>
+						<div class="state_1_con">
+							<p class="state_1_name">庆生聚会-澳门站</p>
+							<p>.....</p>
+							<div class="state_1_last">
+								<span class="state_1_time">2019-04-17 15:00</span>
+								<svg class="icon" aria-hidden="true">
+  									<use xlink:href="#icon-pinglun"></use>
+								</svg>	
+								<span class="_num">12</span>
+								<svg class="icon" aria-hidden="true">
+  									<use xlink:href="#icon-dianzan"></use>
+								</svg>
+								<span class="_num">21</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="../js/mui.js"></script>
+		<script type="text/javascript" src="../js/jquery-3.3.1.min.js" ></script>
+		<script type="text/javascript" src="../js/vue.min.js" ></script>
+		<script type="text/javascript" src="../fonts/iconfont.js" ></script>
+		<script type="text/javascript" src="../js/vue_tap.js" ></script>
+		<script type="text/javascript" src="vae.js" ></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,29 @@
+html{
+	height: 100%;
+}
+body{
+	background-color: #FFFFFF;
+	height: inherit;
+}
+.mui-content{
+	background-color: #FFFFFF;
+}
+.bgm{
+	z-index: -1;
+	position: absolute;
+}
+input{
+	margin: 0px !important;
+	padding: 0px;
+	/*background: transparent !important;*/
+	position: absolute;
+	top: 25px;
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}

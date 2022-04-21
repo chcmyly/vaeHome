@@ -1,0 +1,64 @@
+html{
+	height: 100%;
+}
+body{
+	height: 100% !important;
+}
+.mui-content{
+	width: 100%;
+	background-color: #FFFFFF !important;
+}
+.top{
+	position: fixed;
+	padding-top: 13px;
+	padding-bottom: 13px;
+	border-bottom: solid 1px #F3F3F3;
+	width: 100%;
+	background-color: #FFFFFF;
+}
+.menu{
+	padding-top: 8%;
+}
+.menu dt{
+	padding-top: 4%;
+	padding-bottom: 4%;
+	font-size: 17px;
+	border-bottom: solid 1px #F3F3F3;
+	margin-left: 5%;
+}
+.menu dt i{
+	float: right;
+	padding-right: 10% !important;
+	color:#C7C7CC ;
+	font-size: 20px;
+}
+.menu dt:nth-child(1){
+	border-top: solid 5px #F3F3F3;
+	margin-left: 0;
+	padding-left: 5%;
+}
+.menu dt:nth-child(5){
+	border-bottom: solid 5px #F3F3F3;
+	margin-left: 0;
+	padding-left: 5%;
+}
+.menu dt:nth-child(7){
+	border-bottom: solid 5px #F3F3F3;
+	margin-left: 0;
+	padding-left: 5%;
+}
+.menu dt:nth-child(10){
+	border-bottom: solid 5px #F3F3F3;
+	margin-left: 0;
+	padding-left: 5%;
+}
+.menu dt:nth-child(13){
+	border-bottom: solid 5px #F3F3F3;
+	margin-left: 0;
+	padding-left: 5%;
+}
+.quit{
+	text-align: center;
+	color: red;
+	padding-bottom: 5%;
+}

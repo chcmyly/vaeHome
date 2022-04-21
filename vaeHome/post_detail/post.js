@@ -1,0 +1,90 @@
+
+
+mui.ready(function(){
+	/*var post_id=plus.webview.currentWebview().ID;*/
+	new Vue({
+		el:"#app",
+		data:{
+			post_id:localStorage.getItem("post_id"),
+			writer_name:"",
+			writer_photo:"",
+			circle:"",
+			post_time:"",
+			post_text:"",
+			comments:[]
+		},
+		mounted:function(){
+			var ref=this;
+			$.ajax({
+				type:"post",
+				url:vaehome+"/vaehome/user/loadthisPost",
+				data:{
+					post_id:ref.post_id
+				},
+				success:function(json){
+					ref.writer_name=json[0].username;
+					var writer_photo=json[0].photo_path;
+					document.getElementById("photo").src=writer_photo;
+					ref.post_time=json[0].create_time;
+					ref.post_text=json[0].post_detail;
+					ref.circle=json[0].name;
+				},
+				error:function(){
+					mui.toast("执行异常")
+				}
+			});
+			$.ajax({
+				type:"post",
+				url:vaehome+"/vaehome/user/loadCommentList",
+				data:{
+					post_id:ref.post_id
+				},
+				success:function(json){
+					ref.comments=json;
+					alert(ref.comments);
+				},
+				error:function(){
+					mui.toast("执行异常");
+				}
+			});
+			window.addEventListener('refresh',function(){
+     		location.reload();//父页面仅仅是刷新页面，当然也可以自定义逻辑函数写在里面 
+				});
+		},
+		methods:{
+			toLike:function(){
+				$.ajax({
+				type:"post",
+				url:vaehome+"/vaehome/user/addLike",
+				data:{
+					post_id:localStorage.getItem("post_id"),
+					user_id:localStorage.getItem("id")
+				},
+				success:function(){
+					mui.toast("经验加10");
+				},
+				error:function(){
+					mui.toast("执行异常");
+				}
+				});
+			},
+			toComment:function(){
+				mui.openWindow({
+					url:"../comment/comment.html"
+				});
+			}
+		}
+	});
+});
+mui.plusReady(function(){
+	plus.navigator.setStatusBarBackground("#FFFFFF");//OS顶部状态栏背景色为白色
+	plus.navigator.setStatusBarStyle("dark");//OS顶部文字黑色(白色light，黑色dark)
+	plus.screen.lockOrientation("portrait-primary");//禁止横屏切换
+	//隐藏滚动条
+	plus.webview.currentWebview().setStyle({
+		scrollIndicator:'none'
+	});
+	
+});
+
+mui.init();

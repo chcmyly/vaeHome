@@ -1,0 +1,83 @@
+{
+	"login/login.html": {
+		"refer": [
+			"register/register.html",
+			"my/my.html",
+			"information/information.html",
+			"index.html",
+			"main/main.html"
+		],
+		"resources": [
+			"/index.html"
+		]
+	},
+	"register/register.html": {
+		"refer": [
+			"register/apointment.html",
+			"my/my.html",
+			"main/main.html",
+			"figure/figure.html"
+		],
+		"resources": []
+	},
+	"main/main.html": {
+		"resources": [
+			"vae/vae.html",
+			"login/login.html"
+		],
+		"refer": [
+			"found/found.html",
+			"circle/circle.html",
+			"my/my.html",
+			"vae/vae.html",
+			"message/message.html",
+			"login/login.html"
+		]
+	},
+	"my/my.html": {
+		"refer": [
+			"information/information.html",
+			"login/login.html",
+			"my/set.html"
+		],
+		"resources": []
+	},
+	"index.html": {
+		"refer": [
+			"login/login.html"
+		],
+		"resources": []
+	},
+	"circle/circle.html": {
+		"refer": [
+			"post_detail/post_detail.html",
+			"post_detail/post.html",
+			"sendpost/sendpost.html",
+			"circle/circlepost.html"
+		],
+		"resources": []
+	},
+	"post_detail/post.html": {
+		"refer": [
+			"comment/comment.html"
+		],
+		"resources": []
+	},
+	"my/set.html": {
+		"refer": [
+			"login/login.html"
+		],
+		"resources": []
+	},
+	"information/information.html": {
+		"refer": [
+			"post_detail/post.html"
+		],
+		"resources": []
+	},
+	"figure/figure.html": {
+		"refer": [
+			"main/main.html"
+		]
+	}
+}

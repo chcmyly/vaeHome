@@ -1,0 +1,109 @@
+html{
+	height: 100%;
+}
+body{
+	height: inherit;
+	background-color: #fff;
+}
+.mui-content{
+	background-color: #fff !important;
+}
+.top{
+	width: 100%;
+	padding-top: 13px;
+	padding-bottom: 13px;
+	border-bottom: solid 1px #F3F3F3;
+	position: fixed;
+	background-color: #FFFFFF;
+}
+.top span{
+	color: #333333;
+}
+i{
+	width: 100%;
+	font-size: 30px !important;	
+	color: #C7C7CC;
+}
+.forgetpanel [type="button"]{
+	background-color: #007aff;
+	border: none;
+	color: #fff;	
+	font-size: 15px;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	height: 50px;
+	border-radius: 8px;
+	padding-left: 0px;
+    padding-top: 4% !important;
+
+} 
+.forgetpanel{
+   margin-left: 10%;
+   margin-right: 10%;
+   text-align: center;
+   margin-top: 0px;
+   padding-top: 30%;
+}
+input{
+	width: 100% !important;
+	background-color: #FFFFFF;
+    padding-left: 10% !important;
+    padding-right: 10% !important;
+    padding-top: 7% !important;
+    padding-bottom: 7% !important;
+    border: solid 1px #999999 !important;
+    border-radius: 3px !important;
+}
+
+.forgetpanel .cheak_cord{
+	display: flex;
+	border: solid 1px #999999;
+	margin-bottom: 5%;
+	padding-top: 1.25%;
+	padding-bottom: 1.25%;
+	border-radius: 3px;
+}
+.forgetpanel .cheak_cord input{
+	border: none !important;
+	padding: 0px !important;
+	width: 50% !important;
+	margin-left: 10%;
+	margin-bottom: 0px;
+}
+.forgetpanel .cheak_cord .line{
+	border-left: solid 1px #999999;
+}
+.forgetpanel .cheak_cord .get_cord{
+	flex-grow: 1;
+	margin-top: 3%;
+	color: #007AFF;
+	
+}
+	
+/*.tab dt input{
+	border: 0px;
+}
+.tab{
+	border: solid 1px #999999;
+	display: flex;
+}
+.tab dt{
+	flex-grow: 1;
+	text-align: center;
+}
+ .tab dd .line{
+ 	border-left: solid 1px #555;
+ 	height: 20px;
+ 	margin-left: 0px !important;
+ }
+ .tab dd{ 	
+ 	margin-left: 0;
+ 	margin-left: 10px;
+ 	margin-right: 10px;
+ }*/
+.icon {
+	width: 1em; height: 1em;
+	vertical-align: -0.15em;
+	fill: currentColor;
+	overflow: hidden;
+}

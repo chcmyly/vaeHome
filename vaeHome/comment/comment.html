@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" href="comment.css" />
+	</head>
+		<div id="app">
+			<div class="mui-content">
+				<div class="top">
+					<span class="mui-action-back">取消</span>
+					<span v-tap="{method:sendComment}">发布</span>				
+				</div>
+				<textarea name="usercomment" wrap="physical" placeholder="想要说些什么……" rows="20" v-model="comment_text"></textarea>	
+			</div>
+		</div>
+	<body>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/jquery-3.3.1.min.js" ></script>
+		<script type="text/javascript" src="../js/vue.min.js" ></script>
+		<script type="text/javascript" src="../js/vue_tap.js" ></script>
+		<script type="text/javascript" src="../js/vue_tap.js" ></script>
+		<script type="text/javascript" src="../js/resource.js" ></script>
+		<script type="text/javascript" src="../fonts/iconfont.js" ></script>
+		<script type="text/javascript" src="comment.js" ></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>

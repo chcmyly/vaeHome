@@ -1,0 +1,316 @@
+html{
+	height: 100%;
+}
+body{
+	background-color: #FFFFFF;
+	height: inherit;
+}
+.mui-content{
+	background-color: #FFFFFF;
+}
+.tab{
+	position: fixed;
+	display: flex;
+	margin-top: 0px;
+	margin-bottom: 5%;
+	padding-top: 5%;
+	width: 100%;
+	font-size: 15px;
+	padding-bottom: 1%;
+	border-bottom: solid 1px #F3F3F3;
+	background-color: #FFFFFF;
+	z-index: 9999;
+}
+.tab dt{
+	margin-left: 10%;
+	margin-right: 10%;
+	flex-grow: 1;
+	text-align: center;
+	letter-spacing: 1px;
+	border-bottom: solid 2px #fff;
+	color: #555;
+	padding-bottom: 2%;
+}
+.tab .active{
+	border-bottom: solid 3px #0099FF;
+}
+.ConditionPanel{
+	padding-top: 14%;
+}
+.JourneyPanel{
+	padding-top: 14%;
+	width: 100%;
+}
+.StatePanel{
+	padding-top: 14%;
+	width: 100%;
+}
+.ConditionPanel .con_img{
+	height: 209px;
+	width: 100%;
+	background-image: url(../img/condition_img/1.png);
+	background-size: cover;
+}
+.ConditionPanel .vae_come{
+	background-color: #F3F3F3;
+	padding-bottom: 10%;
+}
+.ConditionPanel .vae_come ._come{
+	padding-top: 3%;
+	padding-bottom: 5%;
+	vertical-align: middle;
+	display: flex;
+	font-size: 15px;
+}
+.ConditionPanel .vae_come ._come .more{
+	color: #555;
+	padding-left: 50%;
+	vertical-align: middle;
+	flex-grow: 1;
+}
+.ConditionPanel .vae_come ._come .iscome{
+	padding-top: 0.4%;
+}
+.ConditionPanel .vae_come ._come i{
+	vertical-align: middle;
+	color: #007AFF;
+	float: right;
+	margin-top: 0.5%;
+	padding-right: 12%;
+}
+.ConditionPanel .vae_come ._come svg{
+	margin-left: 3%;
+	margin-right: 3%;
+	margin-top: 1.3%;
+}
+.ConditionPanel .vae_come .annouce{
+	width: 80%;
+	background-color: #FFFFFF;
+	border: solid 1px #FFFFFF;
+	border-radius: 5px;
+	margin-left: 10%;
+	padding-left: 5%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+.ConditionPanel .vae_come .annouce .time{
+	padding-bottom: 5%;
+	padding-top: 5%;
+}
+.ConditionPanel .vae_come .annouce .vae_photo{
+	background-image: url(../img/vae_photo.jpg);
+	width: 18%;
+	height: 45px;
+	background-size: cover;
+}
+.ConditionPanel .vae_come .annouce .vae_content{
+	display: flex;
+}
+.ConditionPanel .vae_come .annouce .vae_content dl{
+	padding-left: 3%;
+	margin: 0px;
+}
+.ConditionPanel .vae_come .annouce .vae_content .vae_name{
+	font-size: 15px;
+}
+.ConditionPanel .condition_tab{
+	display: flex;
+	width: 100%;
+	border-bottom: solid 1px #F3F3F3;
+	padding-bottom: 5%;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	padding-top: 5%;
+}
+.ConditionPanel .condition_tab dt{
+	padding-left: 5%;
+	padding-right: 5%;
+	text-align: center;
+	flex-grow: 1;
+	letter-spacing: 1px;
+}
+.JourneyPanel .vae_journey .journey_top{
+	width: 100%;
+	padding-left: 10%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	letter-spacing: 2px;
+	border-bottom: solid 1px #F3F3F3;
+}
+.JourneyPanel .vae_journey .journey_content{
+	border-bottom: solid 1px #F3F3F3;
+	width: 100%;
+}
+.JourneyPanel .vae_journey .journey_content .journey_box{
+	width: 90%;
+	font-size: 15px;
+}
+.JourneyPanel .vae_journey .journey_content .box{
+	width: 60%;
+	height: 40px;
+	border-left: solid 1px #F3F3F3;
+	margin-left: 10%;
+}
+.JourneyPanel .vae_journey .journey_content .journey_1 svg{
+	margin-left: 9%;
+	margin-right: 2%;
+}
+.JourneyPanel .vae_journey .journey_content .journey_1 .journey_1_ta{
+	font-size: 13px;
+	color: #555;
+	border-left: solid 1px #F3F3F3;
+	width: 100%;
+	margin-left: 11%;
+	padding-left: 5%;
+}
+.JourneyPanel .vae_journey .journey_content .journey_1 .journey_1_ta .journey_1_time{
+	padding-top: 5%;
+}
+.JourneyPanel .vae_journey .journey_content .journey_1 .journey_1_ta .journey_1_add{
+	padding-top: 5%;
+	padding-bottom: 10%;
+}
+.JourneyPanel .vae_journey .journey_content .mtime{
+	flex-grow: 1;
+	background-color: #F3F3F3;
+	padding-left: 10%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	font-size: 13px;
+	color: #555555;
+}
+.StatePanel .state_img{
+	background-image: url(../img/active.png);
+	width: 100%;
+	height: 209px;
+	background-size: cover;
+}
+.StatePanel .search{
+	display: flex;
+}
+.StatePanel .search .state_select{
+	border: solid 1px #F3F3F3;
+	margin-left: 5%;
+	margin-top: 5%;
+	padding-bottom: 1%;
+	padding-top: 1%;
+	width: 30%;
+	text-align: center;
+	padding-left: 3%;
+	display: flex;
+	vertical-align: middle !important;
+	border-radius: 5px;
+	color: #555555;
+}
+.StatePanel .search .state_select select{
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+	width: 70%;
+}
+.StatePanel .search .state_select span{
+	padding-top: 10%;
+}
+.StatePanel .search .search_box{
+	display: flex;
+	width: 55%;
+	margin-top: 5%;
+	padding-bottom: 1%;
+	padding-top: 1%;
+	border: solid 1px #F3F3F3;
+	border-radius: 5px;
+	margin-left: 5%;
+}
+.StatePanel .search .search_box input{
+	border: none;
+	padding: 0px;
+	margin: 0px;
+	padding-left: 3%;
+}
+.StatePanel .search .search_box svg{
+	margin-top: 5%;
+	margin-left: 5%;
+}
+.StatePanel .state_1{
+	margin-top: 5%;
+}
+.StatePanel .state_1 .state_1_img{
+	background-image: url(../img/juhui-aomen.png);
+	width: 100%;
+	height: 209px;
+	background-size: cover;
+}
+.StatePanel .state_1 .state_1_con{
+	margin-left: 5%;
+}
+.StatePanel .state_1 .state_1_con .state_1_name{
+	color: #000000;
+	font-size: 16px;
+}
+.StatePanel .state_1 .state_1_con .state_1_last{
+	color: #555555;
+	font-size: 14px;
+}
+.StatePanel .state_1 .state_1_con .state_1_last svg{
+	padding-left: 5%;
+}
+.StatePanel .state_1 .state_1_con .state_1_last span{
+	padding-right: 5%;
+}
+.StatePanel .state_1 .state_1_con .state_1_last .state_1_time{
+	padding-right: 30%;
+}
+._condition{
+	margin-top: 5%;
+	display: flex;
+	width: 100%;
+}
+._condition .news_img{
+	width: 30%;
+	margin-left: 5%;
+	height: 110px;
+	background-image: url(../img/news_img/news_img1.png);
+	background-size: cover;
+}
+._condition ._condition_details{
+	width: 65%;
+	padding-right: 5%;
+	padding-left: 5%;
+	margin: 0;
+}
+._condition ._condition_details ._title{
+	color: #000000;
+	font-size: 16px;
+}
+._condition_circle{
+	padding-top: 2%;
+	padding-bottom: 2%;
+	padding-left: 5%;
+}
+._condition_circle ._circle{
+	padding-left: 3%;
+	padding-right: 48%;
+	font-size: 13px;
+	color: #007AFF;
+}
+.comment_num{
+	font-size: 13px;
+	margin-right: 6%;
+	margin-left: 1%;
+}
+.like_num{
+	font-size: 13px;
+	margin-right: 6%;
+	margin-left: 1%;
+}
+.affiche{
+	border-bottom: solid 1px #F3F3F3;
+	border-top: solid 1px #F3F3F3;
+}
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}

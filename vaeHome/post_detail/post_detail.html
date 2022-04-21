@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" href="post_detail.css" />
+	</head>
+
+	<body>
+		<div id="app" class="mui-content">
+			<div class="top">
+				<i class="mui-action-back icon iconfont icon-jiantouzuo"></i>
+				<span>帖子详情</span>
+			</div>
+			<div class="post_content">
+				<div class="user_info">
+					<img src="http://192.168.43.53:9800/2.png" class="info_photo" />
+					<dl>
+						<dt><p>writer_name</p></dt>
+						<dt>post_time</dt>
+					</dl>
+					<span>{{circle}}</span>	
+				</div>
+				<div class="post_text">
+					<p>{{post_text}}</p>
+				</div>
+			</div>
+			<div class="comment" >
+				<div class="box">全部评论</div>
+				<div class="allcomment" v-for="one in comments">
+					<div class="user_info">
+						<img src="http://192.168.43.53:9800/3.png" class="info_photo" />
+						<dl>
+							<dt><p>{{one.username}}</p></dt>
+							<dt class="post_time">{{one.create_time}}</dt>
+						</dl>
+					</div>
+					<div class="comment_text">{{one.comment_detail}}</div>
+				</div>
+				<div class="null">—————  已经木有内容啦   —————</div>
+			</div>
+		<!--<nav class="mui-bar mui-bar-tab">
+          <dt>
+            	<dd class="zan">
+            		<svg class="icon" aria-hidden="true">
+  						<use xlink:href="#icon-dianzan1"></use>
+					</svg>
+            	</dd>
+            	<dd>
+            		<svg class="icon" aria-hidden="true">
+  						<use xlink:href="#icon-pinglun"></use>
+					</svg>
+            	</dd>
+            </dt>
+            <span  class="mui-tab-item mui-active" v-tap="{method:toLike}" >
+                <span class="icon iconfont icon-dianzan1"></span>
+                <span class="mui-tab-label">点赞</span>
+                
+            </span>
+            <span class="mui-tab-item" v-tap="{method:toComment}" >
+                <span class="icon iconfont icon-pinglun"></span>
+                <span class="mui-tab-label">评论</span>
+            </span>
+            
+        </nav>-->
+		</div>
+		<script src="../js/mui.js"></script>
+		<script type="text/javascript" src="../js/jquery-3.3.1.min.js" ></script>
+		<script type="text/javascript" src="../js/resource.js" ></script>
+		<script type="text/javascript" src="../fonts/iconfont.js" ></script>
+		<script type="text/javascript" src="../js/vue.min.js" ></script>
+		<script type="text/javascript" src="../js/vue_tap.js" ></script>
+		<!--<script type="text/javascript" src="post.js" ></script>-->
+		<script type="text/javascript" src="post_detail.js" ></script>
+	</body>
+
+</html>

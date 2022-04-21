@@ -1,0 +1,13 @@
+*{
+	font-family: "微软雅黑" !important;
+}
+
+header{
+	box-shadow: none !important;
+	background-color: #0099ff !important;
+}
+
+header h1{
+	color: #fff !important;
+}
+

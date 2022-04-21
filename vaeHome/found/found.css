@@ -1,0 +1,76 @@
+html{
+	height: 100%;
+}
+body{
+	height: 100% !important;
+}
+.mui-content{
+	background-color: #fff !important;
+	width: 100%;
+}
+.top{		
+	border-bottom: solid 1px #F3F3F3;
+	width: 100%;
+	background-color: #FFFFFF;
+	text-align: center;
+	margin: 0;
+}
+.top p{
+	color: #000000;
+	font-size: 20px;
+	padding-top: 5%;	
+}
+.top svg{
+	font-size: 30px
+}
+.user_photo{
+	width: 20%;
+	height: 70px;
+	border-radius: 100px;
+	border: solid #fff 4px;
+	background-color: #FFFFFF;
+	background-image: url(../img/photo1.jpg);
+	background-size: cover;
+	z-index: 2;
+	margin-right: 5%;
+}
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
+.user_info {
+	text-align: center;
+	display: flex;
+	border-top: solid 15px #F3F3F3;
+	width: 100%;
+}
+.user_content{
+	margin: 0;
+}
+.user_info dt{
+	padding-top: 5%;
+	width: 100%;
+}
+.care{
+	font-size: 30px;
+	margin-left: 18%;
+	margin-top: 8%;
+}
+.user_info dl dt:nth-child(2){
+	display: flex;
+}
+.hot{
+	display: flex;
+	margin-left: 12%;
+	font-size: 22px;
+}
+.hot p{
+	padding-top: 5%;
+	padding-left: 5%;
+}
+.user_info dl{
+	margin-bottom: 0;
+}

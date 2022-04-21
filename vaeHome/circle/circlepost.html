@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" href="circlepost.css" />
+	</head>
+
+	<body>
+		<div id="app" class="mui-content">
+			<div class="top">
+				<i class="mui-action-back icon iconfont icon-jiantouzuo"></i>
+				<span>{{circle_name}}</span>
+			</div>
+			<div class="post_content" v-for="one in circle_post">
+				<div class="post">
+					<div class="user_info">
+						<img :src=one.photo_path class="user_photo" />
+						<dl>
+							<dt>
+								<p>{{one.username}}</p>
+							</dt>
+							<dt>{{one.create_time}}</dt>
+						</dl>
+						<span class="more">
+							<svg class="icon" aria-hidden="true">
+  								<use xlink:href="#icon-gengduo"></use>
+						   	</svg>
+						</span>
+					</div>
+					<div class="post_details">
+						<p>{{one.post_detail}}</p>
+					</div>
+					<div class="post_circle">
+						<span>{{one.name}}</span>
+						<svg class="icon" aria-hidden="true">
+  								<use xlink:href="#icon-pinglun"></use>
+						</svg>	
+						<span class="_num">{{one.comment_num}}</span>
+						<svg class="icon" aria-hidden="true">
+  								<use xlink:href="#icon-dianzan"></use>
+						</svg>
+						<span class="_num">{{one.like_num}}</span>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/jquery-3.3.1.min.js" ></script>
+		<script type="text/javascript" src="../js/vue.min.js" ></script>
+		<script type="text/javascript" src="../js/vue_tap.js" ></script>
+		<script type="text/javascript" src="../js/resource.js" ></script>
+		<script type="text/javascript" src="../fonts/iconfont.js" ></script>
+		<script type="text/javascript" src="circlepost.js" ></script>
+	</body>
+
+</html>

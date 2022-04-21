@@ -1,0 +1,28 @@
+html{
+	height: 100%;
+}
+body{
+	background-color: #FFFFFF;
+	height: inherit;
+}
+.mui-content{
+	background-color: #FFFFFF;
+}
+.top{
+	padding-top: 5%;
+	border-bottom: solid 1px #F3F3F3;
+	padding-bottom: 5%;
+}
+.top span:nth-child(2){
+	float: right;
+	padding-right: 5%;
+	color: #999999;
+}
+.top span:nth-child(1){
+	padding-left: 5%;
+}
+textarea{
+	border: none;
+	padding-top: 5%;
+	height: 80% !important;
+}

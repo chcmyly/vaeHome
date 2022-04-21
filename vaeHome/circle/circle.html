@@ -1,0 +1,276 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/mui.css" />
+		<link rel="stylesheet" href="../css/mui.min.css" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" href="circle.css" />
+	</head>
+
+	<body>
+		<div id="app" class="mui-content">
+			<div class="circle_top">
+				<svg class="icon" aria-hidden="true">
+  					<use xlink:href="#icon-sousuo"></use>
+				</svg>
+				<dl class="tab">
+					<dt :class="{active:showPanel=='ground'}" v-tap="{method:showGroundPanel}">广场</dt>
+					<dt :class="{active:showPanel=='hot'}" v-tap="{method:showHotPanel}">热门</dt>
+					<dt :class="{active:showPanel=='care'}" v-tap="{method:showCarePanel}">关注</dt>
+				</dl>
+				<svg class="icon" aria-hidden="true" v-tap="{method:sendPost}">
+  					<use xlink:href="#icon-bianji"></use>
+				</svg>
+			</div>
+			<div class="GroundPanel" v-show="showPanel=='ground'">
+				<div class="ground_title">
+					<div class="mui-slider">
+ 						<div class="mui-slider-group">
+  						<!--第一个内容区容器-->
+    						<div class="mui-slider-item">
+      						<dl class="ground_title_cof1">
+      							<dt v-tap="{method:search3}">
+      								<svg class="icon" aria-hidden="true">
+  										<use xlink:href="#icon-changge"></use>
+									</svg>
+									<span>2019演唱会</span>
+      							</dt>
+      							<dt v-tap="{method:search4}">
+      								<svg class="icon" aria-hidden="true">
+  										<use xlink:href="#icon-yifu"></use>
+									</svg>
+									<span>2019会服</span>
+      							</dt>
+      							<dt v-tap="{method:search1}">
+      								<svg class="icon" aria-hidden="true">
+  										<use xlink:href="#icon-v"></use>
+									</svg>
+									<span>有关V</span>
+      							</dt>
+      							<dt v-tap="{method:search2}">
+      								<svg class="icon" aria-hidden="true">
+  										<use xlink:href="#icon-yuanchuangzhanghao"></use>
+									</svg>
+									<span>原创圈</span>
+      							</dt>
+      						</dl>
+      						<dl class="ground_title_cof1">
+      							<dt v-tap="{method:search0}">
+      								<svg class="icon" aria-hidden="true">
+  										<use xlink:href="#icon-yuyin"></use>
+									</svg>
+									<span>说唱圈</span>
+      							</dt>
+      							<dt v-tap="{method:search5}">
+      								<svg class="icon" aria-hidden="true">
+  										<use xlink:href="#icon-huati"></use>
+									</svg>
+									<span>每日话题</span>
+      							</dt>
+      							<dt v-tap="{method:search0}">
+      								<svg class="icon" aria-hidden="true">
+  										<use xlink:href="#icon-xiaolian"></use>
+									</svg>
+									<span>露个脸</span>
+      							</dt>
+      							<dt  v-tap="{method:search7}">
+      								<svg class="icon" aria-hidden="true">
+  										<use xlink:href="#icon-wenti"></use>
+									</svg>
+									<span v-tap="{method:search7}">想知道</span>
+      							</dt>
+      						</dl>
+    						</div> 
+    					<!--第二个内容区-->
+    						<div class="mui-slider-item">
+      						<dl class="ground_title_cof1">
+      							<dt v-tap="{method:search9}">
+      								<svg class="icon" aria-hidden="true">
+  										<use xlink:href="#icon-icon"></use>
+									</svg>
+									<span>生活圈</span>
+      							</dt>
+      							<dt v-tap="{method:search12}">
+      								<svg class="icon" aria-hidden="true">
+  										<use xlink:href="#icon-xiaolian"></use>
+									</svg>
+									<span>嘿粉圈</span>
+      							</dt>
+      							<dt v-tap="{method:search11}">
+      								<svg class="icon" aria-hidden="true">
+  										<use xlink:href="#icon-gonggao"></use>
+									</svg>
+									<span>公告</span>
+      							</dt>
+      							<dt>
+      								<!--<svg class="icon" aria-hidden="true">
+  										<use xlink:href="#icon-yuanchuangzhanghao"></use>
+									</svg>
+									<span>原创圈</span>-->
+      							</dt>
+      						</dl>
+      						<dl class="ground_title_cof1">
+      							<dt></dt>
+      							<dt></dt>
+      							<dt></dt>
+      							<dt></dt>
+      						</dl>
+      						<!--<dl class="ground_title_cof1">
+      							<dt>
+      								<svg class="icon" aria-hidden="true">
+  										<use xlink:href="#icon-changge"></use>
+									</svg>
+									<span>2019演唱会</span>
+      							</dt>
+      							<dt>
+      								<svg class="icon" aria-hidden="true">
+  										<use xlink:href="#icon-category"></use>
+									</svg>
+									<span>2019会服</span>
+      							</dt>
+      							<dt>
+      								<svg class="icon" aria-hidden="true">
+  										<use xlink:href="#icon-v"></use>
+									</svg>
+									<span>有关V</span>
+      							</dt>
+      							<dt>
+      								<svg class="icon" aria-hidden="true">
+  										<use xlink:href="#icon-yuanchuangzhanghao"></use>
+									</svg>
+									<span>原创圈</span>
+      							</dt>
+      						</dl>-->
+    						</div>
+ 			 			</div>
+					</div>					
+					
+				</div>
+				<div class="post_content" v-for="one in post" name="post1" v-tap="{method:readPost}" :data-id="one.id">
+					<div class="ground_post"  >
+						<div  class="post_info">
+							<img :src=one.photo_path class="info_photo"/>
+							<dl>
+								<dt><p class="info_name">{{one.username}}</p></dt>
+								<dt>
+									<span class="info_time">{{one.create_time}}</span>							
+								</dt>
+							</dl>
+							<span class="more">
+								<svg class="icon" aria-hidden="true">
+  									<use xlink:href="#icon-gengduo"></use>
+						   		</svg>
+							</span>	
+						</div>
+						<div class="post_details" >
+							<div class="post_text">{{one.post_detail}}</div>
+						</div>
+						<div class="post_circle">
+							<span class="_circle">{{one.name}}</span>
+							<svg class="icon" aria-hidden="true">
+  								<use xlink:href="#icon-pinglun"></use>
+							</svg>	
+							<span class="comment_num">{{one.comment_num}}</span>
+							<svg class="icon" aria-hidden="true">
+  								<use xlink:href="#icon-dianzan"></use>
+							</svg>
+							<span class="like_num">{{one.like_num}}</span>
+						</div>
+					</div>
+				
+				</div>
+			</div>
+			<div class="HotPanel" v-show="showPanel=='hot'"  >
+				<div class="post_con" v-for="one in hotpost" name="post1" v-tap="{method:readPost}" :data-id="one.id" >
+				<div class="hot_post"  >
+					<div class="hot_post_info">
+						<img :src=one.photo_path class="hot_post_info_photo"  />
+						<dl>
+							<dt><p class="hot_post_info_name">{{one.username}}</p></dt>
+							<dt>
+								<span class="hot_post_info_time">{{one.create_time}}</span>
+								<!--<span class="hot_post_info_add">成都</span>-->
+							</dt>
+						</dl>
+						<span class="more">
+							<svg class="icon" aria-hidden="true">
+  								<use xlink:href="#icon-gengduo"></use>
+						   	</svg>
+						</span>
+					</div>
+					<div class="hot_post_details">
+						<svg class="icon" aria-hidden="true">
+  							<use xlink:href="#icon-hot"></use>
+						</svg>
+						<p class="hot_post_text">{{one.post_detail}}</p>
+					</div>
+					<div class="post_circle">
+						<span class="_circle">{{one.name}}</span>
+						<svg class="icon" aria-hidden="true">
+  							<use xlink:href="#icon-pinglun"></use>
+						</svg>	
+						<span class="comment_num">{{one.comment_num}}</span>
+						<svg class="icon" aria-hidden="true">
+  							<use xlink:href="#icon-dianzan"></use>
+						</svg>
+						<span class="like_num">{{one.like_num}}</span>
+					</div>
+				</div>
+				
+				</div>
+				</div>
+			<div class="CarePanel" v-show="showPanel=='care'">
+				<div class="post_cont" v-for="one in carepost" name="post1" v-tap="{method:readPost}" :data-id="one.id" >
+				<div class="care_post">
+					<div class="care_post_info">
+						<img :src=one.photo_path  class="care_post_info_photo" />
+						<dl>
+							<dt><p class="care_post_info_name">{{one.username}}</p></dt>
+							<dt>
+								<span class="care_post_info_time">{{one.create_time}}</span>
+								<!--<span class="care_post_info_add">成都</span>-->
+							</dt>
+						</dl>
+						<span class="more">
+							<svg class="icon" aria-hidden="true">
+  								<use xlink:href="#icon-gengduo"></use>
+						   	</svg>
+						</span>
+					</div>
+					<div class="care_post_details">
+						<p class="care_post_text">{{one.post_detail}}</p>
+					</div>
+					<div class="post_circle">
+						<span class="_circle">{{one.name}}</span>
+						<svg class="icon" aria-hidden="true">
+  							<use xlink:href="#icon-pinglun"></use>
+						</svg>	
+						<span class="comment_num">{{one.comment_num}}</span>
+						<svg class="icon" aria-hidden="true">
+  							<use xlink:href="#icon-dianzan"></use>
+						</svg>
+						<span class="like_num">{{one.like_num}}</span>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+		<script src="../js/mui.js"></script>
+		<script type="text/javascript" src="../fonts/iconfont.js" ></script>
+		<script type="text/javascript" src="../js/jquery-3.3.1.min.js" ></script>
+		<script type="text/javascript" src="../js/resource.js" ></script>
+		<script type="text/javascript" src="../js/vue.min.js" ></script>
+		<script type="text/javascript" src="../js/vue_tap.js" ></script>
+		<script type="text/javascript" src="circle.js" ></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>

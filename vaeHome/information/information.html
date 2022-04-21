@@ -1,0 +1,125 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/mui.min.css" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" href="information.css" />
+	</head>
+
+	<body>
+		<div id="app">
+			<div class="top">
+				<i class="mui-action-back icon iconfont icon-jiantouzuo" ></i>
+				<span>我的主页</span>
+				<span class="change">修改资料</span>
+			</div>
+			<div class="mui-content">
+				<div class="home_photo"></div>
+				<img id="photo" class="user_photo" src="" />
+				<div class="user_info">
+					<p class="user_name">{{uername}}</p>
+					<div class="sex">
+						<span class="user_sex" v-if="sex=='男'">
+							<svg class="icon" aria-hidden="true">
+  								<use xlink:href="#icon-nan"></use>
+							</svg>
+						</span>
+						<span class="user_sex" v-if="sex=='女'">
+							<svg class="icon" aria-hidden="true">
+  								<use xlink:href="#icon-nv"></use>
+							</svg>
+						</span>		
+						<span class="level">LV.{{Math.floor(exp/1000)}}</span>
+						<p>晚来天欲雪，能饮一杯无</p>
+						<svg class="icon" aria-hidden="true">
+  							<use xlink:href="#icon-huo"></use>
+						</svg>	
+						<span class="hot_value">{{hot}}</span>
+					</div>
+ 					<dl class="user_fans">
+ 						<dt>
+ 							<span>{{fans}}</span>
+ 							<span class="s1">粉丝</span>
+ 						</dt>
+ 						<dt>
+ 							<span>{{care}}</span>
+ 							<span class="s1">关注</span>
+ 						</dt>
+ 					</dl>					
+				</div>
+				<div class="sign">
+					<svg class="icon" aria-hidden="true">
+  						<use xlink:href="#icon-rili"></use>
+					</svg>	
+  						<span class="s2">连续签到<span class="sign_con">0</span>天</span>
+  						<span class="s2">总签到<span class="sign_all">195</span>天</span>					
+				</div>
+				<div class="sou_card">
+					<div class="card_top">
+						<span class="s3">纪念卡</span>
+						<span class="s4">更多</span>
+					</div>
+					<div class="card1">
+						<div class="picture"></div>
+					    <dl >
+					    	<dt class="card_name">青年晚报</dt>
+					    	<dt class="collect_num">收集进度:<span class="card_num">5/12</span></dt>
+					    </dl>
+					</div>
+				</div>
+				<div class="user_post" >
+					<div class="post_title">
+						<span class="s5">帖子（<span>124</span>）</span>
+					</div>
+					<div class="post_details"  v-tap="{method:readPost}" v-for="one in post" :data-id="one.id" name="post1">
+						<div class="user_info1">
+							<img :src=one.photo_path  class="user_photo1"/>
+							<dl>
+								<dt><p class="user_name1">{{one.username}}</p></dt>
+								<dt class="post_date">{{one.create_time}}</dt>							
+							</dl>
+							<span class="more">
+								<svg class="icon" aria-hidden="true">
+  									<use xlink:href="#icon-gengduo"></use>
+						   		</svg>
+							</span>		
+						</div>
+						<div class="_details">
+							<div class="post_text"><p>{{one.post_detail}}</p></div>
+							<!--<div class="post_photo"></div>-->
+						</div>
+						<div class="post_circle">
+							<span class="_circle">{{one.name}}</span>
+							<svg class="icon" aria-hidden="true">
+  								<use xlink:href="#icon-pinglun"></use>
+							</svg>	
+							<span class="_num">{{one.comment_num}}</span>
+							<svg class="icon" aria-hidden="true">
+  								<use xlink:href="#icon-dianzan"></use>
+							</svg>
+							<span class="_num">{{one.like_num}}</span>
+						</div>
+					</div>						
+				</div>
+			</div>
+					
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/jquery-3.3.1.min.js" ></script>
+		<script type="text/javascript" src="../fonts/iconfont.js" ></script>
+		<script type="text/javascript" src="../js/resource.js" ></script>
+		<script type="text/javascript" src="../js/vue.min.js" ></script>
+		<script type="text/javascript" src="../js/vue_tap.js" ></script>
+		<script type="text/javascript" src="information.js" ></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>

@@ -1,0 +1,103 @@
+html{
+	height: 100%;
+}
+body{
+	height: 100% !important;
+
+}
+.mui-content{
+	background-color: #fff !important;
+	width: 100%;
+}
+.top{
+	padding-top: 13px;
+	padding-bottom: 13px;
+	border-bottom: solid 1px #F3F3F3;	
+}
+.info_photo{
+	width: 16%;
+	height: 55px;
+	border-radius: 8px;
+	border: solid #fff 4px;
+	background-image: url(../img/user_touxiang/anan.jpg);
+	background-size: cover;
+	margin-right: 5%;
+	margin-top: 4%;
+	margin-left: 2%;
+}
+.post_content{
+	border-bottom: solid 5px #F3F3F3;
+}
+.user_info{
+	display: flex;
+}
+.user_info dl p{
+	color: #000000;
+	font-size: 16px;
+	margin-top: 3%;
+}
+.user_info dl dt:nth-child(2){
+	color: #929292;
+	font-size: 13px;
+}
+.post_content span{
+	margin-left: 34%;
+	margin-top: 7%;
+	margin-bottom: 8%;
+	padding-top: 1%;
+	font-size: 16px;
+	color: #007AFF;
+	border-left: solid 1px #F3F3F3;
+	padding-left: 5%;
+}
+.post_content .post_text{
+	margin-left: 5%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+.post_content .post_text p{
+	color: #000000;
+}
+.allcomment{
+	border-bottom: solid 1px #F3F3F3;
+}
+.comment .box{
+	padding-top: 3%;
+	padding-left: 3%;
+	border-bottom: solid 1px #F3F3F3;
+	padding-bottom: 3%;	
+}
+.allcomment .comment_text{
+	font-size: 14px;
+	padding-left: 23%;	
+	padding-bottom: 5%;
+}
+.comment .null{
+	font-size: 12px;
+	padding-right: 20%;
+	padding-left: 20%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	background-color: #F3F3F3;
+	color: #555555;
+}
+/*.mui-bar{
+	display: flex;
+	padding-left: 15%;
+	padding-right: 10%;
+}
+.mui-bar dd{
+	flex-grow: 1;
+	padding-top: 3%;
+	font-size: 25px
+}*/
+.zan{
+	font-size: 30px !important
+}
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}

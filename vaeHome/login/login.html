@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="login.css" />
+	</head>  
+	<body>
+		<div id="app">
+			<div class="mui-content">
+				<img src="../img/loginbg.png" width="100%" />
+				<div class="loginpanel">
+					<input type="text" v-model="username" placeholder="用户名 / 手机号 / 邮箱 " />
+					<input type="password" v-model="password" placeholder=" 密码 " />
+					<input type="button" v-tap="{method:loginSystem}" value="登  录" />			
+					<dl class="tab">
+					<dt v-tap="{method:gotoregister}" >注册账号</dt>
+					<dd>
+						<div class="line"></div>
+					</dd>
+					<dt v-tap="{method:forgetpassword}" >忘记密码</dt>
+				</dl>
+				</div>
+				<div class="biaoge">
+					<dl>
+						<dd class="d1">
+							<div class="topline"></div>
+						</dd>
+						<dt>
+							<span>社交账号登录</span>
+						</dt>
+						<dd class="d2">
+							<div class="topline"></div>
+						</dd>
+					</dl>
+				</div>
+				
+				<div class="tubiao">
+					<dl>
+						<dt>
+							<svg class="icon" aria-hidden="true">
+          			   			<use xlink:href="#icon-denglufangshi-weixin"></use>		   
+        					</svg>
+						</dt>
+						<dd>
+							<span>微信</span>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<svg class="icon" aria-hidden="true">
+          			   			<use xlink:href="#icon-denglufangshi-QQ"></use>		   
+        		    		</svg>
+						</dt>
+						<dd>
+							<span>QQ</span>
+						</dd>
+					</dl>
+					<dl>
+						<dt>
+							<svg class="icon" aria-hidden="true">
+          			   			<use xlink:href="#icon-denglufangshi-weibo"></use>		   
+        		   			</svg>
+						</dt>
+						
+						
+						<dd>
+							<span>微博</span>
+						</dd>				
+        		   </dl>      		    
+				</div>
+			</div>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		
+		<script type="text/javascript" src="../js/vue.min.js" ></script>
+		<script type="text/javascript" src="../js/vue_tap.js" ></script>
+		<script type="text/javascript" src="../js/jquery-3.3.1.min.js" ></script>
+		<script type="text/javascript" src="../js/regexp.js" ></script>
+		<script type="text/javascript" src="../js/resource.js" ></script>
+		<script type="text/javascript" src="../fonts/iconfont.js" ></script>
+		<script type="text/javascript" src="login.js" ></script>
+
+	</body>
+
+</html>

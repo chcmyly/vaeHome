@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" href="message.css" />
+	</head>
+
+	<body>
+		<div id="app">
+			<div class="mui-content">
+				<div class="message_box">消息列表</div>
+				<div class="message_con" v-for="one in message">
+				<div class="message">
+					<p>{{one.create_time}}</p>
+					<p>{{one.message}}</p>
+				</div>
+				</div>
+			</div>
+			<p class="null">没有数据了</p>
+		</div>
+		
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/jquery-3.3.1.min.js" ></script>
+		<script type="text/javascript" src="../js/vue.min.js" ></script>
+		<script type="text/javascript" src="../js/vue_tap.js" ></script>
+		<script type="text/javascript" src="../js/resource.js" ></script>
+		<script type="text/javascript" src="message.js" ></script>
+	</body>
+
+</html>

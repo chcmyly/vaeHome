@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" href="sendpost.css" />
+	</head>
+
+	<body>
+		<div id="app" class="mui-content">
+			<div class="top">
+				<span class="mui-action-back">取消</span>
+				<span v-tap="{method:sendPost}">发布</span>
+			</div>
+			<div class="select">
+				<span>点击选择频道</span>
+				<select  v-model="circle_id" >
+					<option value="1">有关V</option>
+					<option value="2">原创圈</option>
+					<option value="3">2019演唱会</option>
+					<option value="4">2019会服</option>
+					<option value="5">每日话题</option>
+					<option value="6">露个脸</option>
+					<option value="7">想知道</option>
+					<option value="8">灌水圈</option>
+					<option value="9">生活圈</option>
+					<option value="10">哈哈哈</option>
+					<option value="12">嘿粉圈</option>
+					<option value="13">游戏圈</option>
+				</select>
+				<i class="icon iconfont icon-jiantouyou" ></i>
+			</div>
+			<textarea name="userpost" wrap="physical" placeholder="想要说些什么……" rows="20" v-model="post_text"></textarea>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/jquery-3.3.1.min.js" ></script>
+		<script type="text/javascript" src="../js/vue.min.js" ></script>
+		<script type="text/javascript" src="../js/vue-touch.js" ></script>
+		<script type="text/javascript" src="../js/vue_tap.js" ></script>
+		<script type="text/javascript" src="../fonts/iconfont.js" ></script>
+		<script type="text/javascript" src="../js/resource.js" ></script>
+		<script type="text/javascript" src="sendpost.js" ></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>

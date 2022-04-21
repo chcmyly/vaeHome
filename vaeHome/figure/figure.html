@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="figure.css" />
+	</head>
+
+	<body>
+		<div id="app" class="mui-content">
+			<div class="top">
+				<span>完善资料</span>
+				<!--<span>保存</span>-->
+			</div> 
+		<div class="user_info">
+			<dl>
+				<dt>
+					<span>昵称</span>
+					<span>{{username}}</span>
+				</dt>
+				<dt >
+					<span>性别</span>
+					<select v-model="sex">
+						<option value="男" selected="selected">男</option>
+						<option value="女">女</option>
+					</select>
+					<i class="iconfont icon-jiantouyou"></i>
+				</dt>
+				<dt >
+					<span>居住地</span>
+					<input placeholder="输入城市" type="text" v-model="city" />
+					<i class="iconfont icon-jiantouyou"></i>
+				</dt>
+				<dt v-tap="{method:Selectbirthday}">
+					<span>生日</span>
+					<span v-model="birthday" id="birthday"></span>
+					<i class="iconfont icon-jiantouyou"></i>
+				</dt>
+				<dt>
+					<span>邮箱</span>
+					<input placeholder="输入邮箱" type="text" v-model="email" />
+					<i class="iconfont icon-jiantouyou"></i>					
+				</dt>
+				<dt>
+					<span>手机</span>
+					<input placeholder="输入手机号" type="text" v-model="phonenum" />
+					<i class="iconfont icon-jiantouyou"></i>					
+				</dt>				
+			</dl>
+		</div>
+		<input type="button" value="完成注册" v-tap="{method:sendInformation}" />
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/jquery-3.3.1.min.js" ></script>
+		<script type="text/javascript" src="../js/vue.min.js" ></script>
+		<script type="text/javascript" src="../js/vue_tap.js" ></script>
+		<script type="text/javascript" src="../js/regexp.js" ></script>
+		<script type="text/javascript" src="../fonts/iconfont.js" ></script>
+		<script type="text/javascript" src="../js/resource.js" ></script>
+		<script type="text/javascript" src="figure.js" ></script>
+	</body>
+
+</html>

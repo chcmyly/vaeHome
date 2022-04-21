@@ -1,0 +1,244 @@
+html{
+	height: 100%;
+}
+body{
+	background-color: #FFFFFF;
+	height: inherit;
+}
+.mui-content{
+	background-color: #FFFFFF;
+	width: 100%;
+}
+.circle_top{
+	display: flex;
+	width: 100%;
+	border-bottom: solid 1px #F3F3F3;
+	position: fixed;
+	background-color: #FFFFFF;
+}
+.circle_top .tab{
+	display: flex;
+	width: 60%;
+	margin-left: 10%;
+	margin-right: 5%;
+	margin-bottom: 0px;
+	background-color: #FFFFFF;
+}
+.circle_top .tab dt{
+	flex-grow: 2;
+	padding-bottom: 5%;
+	text-align: center;
+	margin-left: 5%;
+	margin-right: 5%;
+}
+.circle_top svg{
+	margin-top: 5%;
+	margin-left: 5%;
+}
+.tab .active{
+	border-bottom: solid 3px #0099FF;
+}
+.GroundPanel{
+	padding-top: 10%;
+	widows: 100%;
+}
+.HotPanel{
+	padding-top: 15%;
+}
+.CarePanel{
+	padding-top: 15%;
+}
+.GroundPanel .ground_title{
+	width: 100%;
+	text-align: center;
+	border-bottom: solid 5px #F3F3F3;
+}
+.GroundPanel .ground_title .ground_title_cof1{
+	display: flex;
+	font-size: 30px;
+}
+.GroundPanel .ground_title .ground_title_cof1 dt{
+	flex-grow: 1;
+	width: 20%;
+}
+.GroundPanel .ground_title .ground_title_cof1 dt span{
+	display: block;
+	font-size: 15px;
+	padding-top: 5%;
+	color: #555555;
+}
+.GroundPanel .ground_post{
+	border-bottom: solid 5px #F3F3F3;
+}
+.GroundPanel .ground_post .post_info{
+	display: flex;
+	padding-left: 5%;
+}
+.GroundPanel .ground_post .post_info .info_photo{
+	width: 16%;
+	height: 55px;
+	border-radius: 8px;
+	border: solid #fff 4px;
+	background-image: url(../img/user_touxiang/anan.jpg);
+	background-size: cover;
+	margin-right: 5%;
+	margin-top: 4%;
+	margin-left: 2%;
+}
+.GroundPanel .ground_post .post_info dl dt p{
+	color: #000000;
+	font-size: 16px;
+}
+.GroundPanel .ground_post .post_info dl dt span{
+	color: #555555;
+	font-size: 13px;
+}
+.GroundPanel .ground_post .post_info .more{
+	padding-top: 5%;
+	padding-left: 30%;
+	font-size: 30px;
+}
+.GroundPanel .ground_post .post_details .post_text{
+	color: #555555;
+	font-size: 15px;
+	padding-left: 3%;
+	padding-bottom: 4%;
+}
+.GroundPanel .ground_post .post_details{
+	display: flex;
+ 	padding: 5%;
+}
+.GroundPanel .ground_post .post_circle ._circle{
+	padding-left: 3%;
+	padding-right: 48%;
+	font-size: 13px;
+	color: #007AFF;
+}
+.GroundPanel .ground_post .post_circle{
+	padding-top: 2%;
+	padding-bottom: 2%;
+	border-top: solid 1px #F3F3F3;
+	padding-left: 5%;
+}
+.HotPanel .hot_post{
+	border-bottom: solid 5px #F3F3F3;
+}
+.HotPanel .hot_post .hot_post_info{
+	display: flex;
+	padding-left: 5%;
+}
+.HotPanel .hot_post .hot_post_info .hot_post_info_photo{
+	width: 16%;
+	height: 55px;
+	background-image: url(../img/photo.png);
+	background-size: cover;
+	border-radius: 8px;
+	border: solid 4px #FFFFFF;
+	margin-right: 5%;
+	margin-top: 4%;
+	margin-left: 2%;
+}
+.HotPanel .hot_post .hot_post_info .hot_post_info_name{
+	color: #000000;
+	font-size:16px;
+}
+.HotPanel .hot_post .hot_post_info dl dt span{
+	color: #555555;
+	font-size: 13px;
+}
+.HotPanel .hot_post .more{
+	padding-top: 5%;
+	padding-left: 30%;
+	font-size: 30px;
+}
+.HotPanel .hot_post .hot_post_details{
+	display: flex;
+	border-bottom: solid 1px #F3F3F3;
+	padding: 5%;
+}
+.HotPanel .hot_post .hot_post_details svg{
+	margin-right: 3%;
+	margin-top: 0.5%;
+	font-size: 20px;
+}
+.HotPanel .hot_post .hot_post_details .hot_post_text{
+	color: #555555;
+	font-size: 15px;
+}
+.HotPanel .hot_post .post_circle ._circle{
+	padding-right: 48%;
+	font-size: 13px;
+	color: #007AFF;
+}
+.HotPanel .hot_post .post_circle{
+	padding-top: 2%;
+	padding-bottom: 2%;
+	padding-left: 5%;
+}
+.CarePanel .care_post{
+	border-bottom: solid 5px #F3F3F3;
+}
+.CarePanel .care_post .care_post_info{
+	display: flex;
+	padding-left: 5%;
+}
+.CarePanel .care_post .care_post_info .care_post_info_photo{
+	width: 16%;
+	height: 55px;
+	background-image: url(../img/user_touxiang/yetingshengfan.png);
+	background-size: cover;
+	border-radius: 8px;
+	border: solid 4px #FFFFFF;
+	margin-right: 5%;
+	margin-top: 4%;
+	margin-left: 2%;
+}
+.CarePanel .care_post .care_post_info .care_post_info_name{
+	color: #000000;
+	font-size:16px;
+}
+.CarePanel .care_post .care_post_info dl dt span{
+	color: #555555;
+	font-size: 13px;
+}
+.CarePanel .care_post .care_post_info .more{
+	padding-top: 5%;
+	padding-left: 30%;
+	font-size: 30px;
+}
+.CarePanel .care_post .post_circle{
+	padding-top: 2%;
+	padding-bottom: 2%;
+	padding-left: 5%;
+}
+.CarePanel .care_post .post_circle ._circle{
+	padding-right: 48%;
+	font-size: 13px;
+	color: #007AFF;
+}
+.CarePanel .care_post .care_post_details{
+	display: flex;
+	border-bottom: solid 1px #F3F3F3;
+	padding: 5%;
+}
+.CarePanel .care_post .care_post_details .care_post_text{
+	color: #555555;
+	font-size: 15px;
+}
+.comment_num{
+	font-size: 13px;
+	margin-right: 6%;
+	margin-left: 1%;
+}
+.like_num{
+	font-size: 13px;
+	margin-right: 6%;
+	margin-left: 1%;
+}
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}

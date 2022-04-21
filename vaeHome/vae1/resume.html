@@ -1,0 +1,254 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="../css/mui.picker.min.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css"/>
+		<link rel="stylesheet" href="../css/iconfont2.css" />
+		<link rel="stylesheet" type="text/css" href="../css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="resume.css"/>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav header">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+			<h1 class="mui-title">我的简历</h1>
+			<span class="operate">修改</span>
+		</header>
+		
+		<div class="mui-content">
+		    <div class="resume" id="resume">
+		    	<div class="extra_space"></div>
+		    		<div id="info_1" class="userinfo">
+					<dl>
+						<dt>
+							<a>
+								<h4>头像</h4>
+								<img  id="head" v-bind:src="photo_path"  class="photo" v-tap="{fn:takePicture}"/>
+							</a>
+						</dt>
+						<dt>
+							<a>
+								<span class="label">姓名</span>
+								<span class="value">{{name}}</span>
+							</a>
+						</dt>
+						<dt>
+							<a>
+								<span class="label">实名认证</span>
+								<span class="value">{{auth}}</span>
+							</a>
+						</dt>
+					</dl>
+				</div>
+				<div id="info" class="card">
+					<dl>
+						<dt>基本资料</dt>
+						<dd>
+							<a id="sex">
+								<span class="label">性别</span>
+								<span class="value" data-value="女" ><i class="iconfont icon-enter"></i></span>
+							</a>
+						</dd>
+						<dd>
+							<a id="birthday">
+								<span class="label">生日</span>
+								<span class="value"><i class="iconfont icon-enter"></i></span>
+							</a>
+						</dd>
+						<dd>
+							<a id="height">
+								<span class="label">身高</span>
+								<span class="value"><i class="iconfont icon-enter"></i></span>
+							</a>
+						</dd>
+						<dd>
+							<a id="weight">
+								<span class="label">体重</span>
+								<span class="value"><i class="iconfont icon-enter"></i></span>
+							</a>
+						</dd>
+						<dd>
+							<a id="marriage">
+								<span class="label">婚姻状况</span>
+								<span class="value" data-value="未婚"><i class="iconfont icon-enter"></i></span>
+							</a>
+						</dd>
+						<dd>
+							<a id="ancestral_home">
+								<span class="label">籍贯</span>
+								<span class="value"><i class="iconfont icon-enter"></i></span>
+							</a>
+						</dd>
+						<dd>
+							<a name="education">
+								<span class="label">学历</span>
+								<span class="value" data-value="本科"><i class="iconfont icon-enter"></i></span>
+							</a>
+						</dd>
+						<dd>
+							<a id="tel">
+								<span class="label">电话</span>
+								<span class="value"><i class="iconfont icon-enter"></i></span>
+							</a>
+						</dd>
+						<dd>
+							<a id="email">
+								<span class="label">邮箱</span>
+								<span class="value"><i class="iconfont icon-enter"></i></span>
+							</a>
+						</dd>
+					</dl>
+				</div>
+				<div id="education" class="card card1">
+					<dl >
+						<dt>教育经历</dt>
+						<dd>
+							<a name="school">
+								<span class="label">毕业学校</span>
+								<span class="value"><i class="iconfont icon-enter"></i></span>
+							</a>
+						</dd>
+						<dd>
+							<a name="major">
+								<span class="label">所学专业</span>
+								<span class="value"><i class="iconfont icon-enter"></i></span>
+							</a>
+						</dd>
+						<dd>
+							<a name="education">
+								<span class="label">学历</span>
+								<span class="value" data-value="本科"><i class="iconfont icon-enter"></i></span>
+							</a>
+						</dd>
+						<dd>
+							<a name="year">
+								<span class="label">毕业年份</span>
+								<span class="value"><i class="iconfont icon-enter"></i></span>
+							</a>
+						</dd>
+					</dl>
+					<div class="container"><dt class="btn1"><i class="iconfont icon-iconjia-copy"></i></dt></div>
+				</div>
+				<div id="work" class="card card2">
+					<dl>
+						<dt>工作经历</dt>
+						<dd>
+							<a name="company">
+								<span class="label">企业名称</span>
+								<span class="value"><i class="iconfont icon-enter"></i></span>
+							</a>
+						</dd>
+						<dd>
+							<a name="hiredate">
+								<span class="label">入职时间</span>
+								<span class="value"><i class="iconfont icon-enter"></i></span>
+							</a>
+						</dd>
+						<dd>
+							<a name="leavedate">
+								<span class="label">离职时间</span>
+								<span class="value"><i class="iconfont icon-enter"></i></span>
+							</a>
+						</dd>
+						<dd>
+							<a name="content">
+								<span class="label">工作内容</span>
+								<span class="value"><i class="iconfont icon-enter"></i></span>
+							</a>
+						</dd>
+					</dl>
+					<div class="container"><dt class="btn1"><i class="iconfont icon-iconjia-copy"></i></dt></div>
+				</div>
+		    	<div id="introduction" class="card card3">
+		    		<dl>
+		    			<dt>自我介绍</dt>
+		    				<dd>
+		    					<a name="intro">
+								<span class="label"><无></span>
+								<span class="value" >请填写<i class="iconfont icon-enter"></i></span>
+							</a>
+		    				</dd>
+
+		    		</dl>
+		    	</div>
+		    	
+		    	<div id="evaluate" class="card card4">
+		    		<dl>
+		    			<dt>技术自评</dt>
+		    				<dd>
+		    					<a name="evalu">
+								<span class="label"><无></span>
+								<span class="value" >请填写<i class="iconfont icon-enter"></i></span>
+							</a>
+		    				</dd>
+
+		    		</dl>
+		    	</div>
+		    	
+		    	
+		    	<div id="experience" class="card card5">
+		    		<dl>
+		    			<dt>技术经验</dt>
+		    				<dd>
+		    					<a name="exper">
+								<span class="label"><无></span>
+								<span class="value" >请填写<i class="iconfont icon-enter"></i></span>
+							</a>
+		    				</dd>
+
+		    		</dl>
+		    	</div>
+		    	
+		    	
+		    	
+		    	<div id="apply" class="card card6">
+					<dl>
+						<dt>求职要求</dt>
+						<dd>
+							<a name="job_city">
+								<span class="label">求职地点</span>
+								<span class="value">请填写<i class="iconfont icon-enter"></i></span>
+							</a>
+						</dd>
+						<dd>
+							<a name="job_salary">
+								<span class="label">薪资要求</span>
+								<span class="value">请填写<i class="iconfont icon-enter"></i></span>
+							</a>
+						</dd>
+						<dd>
+							<a name="job_name">
+								<span class="label">求职岗位</span>
+								<span class="value">请填写<i class="iconfont icon-enter"></i></span>
+							</a>
+						</dd>
+						<dd>
+							<a name="job_hiredate">
+								<span class="label">入职时间</span>
+								<span class="value">请填写<i class="iconfont icon-enter"></i></span>
+							</a>
+						</dd>
+					</dl>
+				</div>
+		    </div>
+		</div>
+		
+		
+		
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/vue.min.js" ></script>
+		<script type="text/javascript" src="../js/mui.picker.min.js"></script>
+		<script type="text/javascript" src="../js/mui.picker.js" ></script>
+		<script type="text/javascript" src="../js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="../js/vue-touch.js" ></script>
+		<script type="text/javascript" src="../js/eleditor/Eleditor.min.js" ></script>
+		<script type="text/javascript" src="../js/resource.js" ></script>
+		<script type="text/javascript" src="resume.js" ></script>
+	</body>
+
+</html>

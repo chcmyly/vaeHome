@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="post.css" />
+	</head>
+	
+	<body>
+		<div id="app">
+			<div class="mui-content">
+				<div class="top">
+					<i class="mui-action-back icon iconfont icon-jiantouzuo"></i>
+					<span>帖子详情</span>
+				</div>
+				<div class="post_content">
+					<div class="user_info">
+						<img id="photo" class="info_photo" src=""/>
+						<dl>
+							<dt>{{writer_name}}</dt>
+							<dt>{{post_time}}</dt>
+						</dl>
+						<span>{{circle}}</span>
+					</div>
+					<div class="post_text">
+						<p>{{post_text}}</p>
+					</div>				
+				</div>
+				<div class="comment" v-if="comments!=null&&comments.length>0">
+					<div class="com_box">全部评论</div>
+				</div>
+				<div class="allcomment" v-for="one in comments">
+					<div class="user_info">
+						<img class="info_photo" :src=one.photo_path />
+						<dl>
+							<dt>{{one.username}}</dt>
+							<dt>{{one.create_time}}</dt>
+						</dl>
+					</div>
+					<div class="comment_text">{{one.comment_detail}}</div>
+				</div>
+			</div>
+			<div class="over"><p align="center">没有数据</p></div>
+			<dl class="box">
+				<dt v-tap="{method:toLike}">				
+					<svg class="icon" aria-hidden="true">
+  						<use xlink:href="#icon-dianzan-choose"></use>
+					</svg>					
+					<span>点赞</span>
+				</dt>
+				<dt v-tap="{method:toComment}">					
+					<svg class="icon" aria-hidden="true">
+  						<use xlink:href="#icon-pinglun"></use>
+					</svg>										
+					<span>评论</span>
+				</dt>
+			</dl>
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../js/jquery-3.3.1.min.js" ></script>
+		<script type="text/javascript" src="../js/vue.min.js" ></script>
+		<script type="text/javascript" src="../js/resource.js" ></script>
+		<script type="text/javascript" src="../js/vue_tap.js" ></script>
+		<script type="text/javascript" src="../fonts/iconfont.js" ></script>
+		<script type="text/javascript" src="post.js" ></script>
+	</body>
+
+</html>

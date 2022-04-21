@@ -1,0 +1,58 @@
+html{
+	height: 100%;
+}
+body{
+	background-color: #FFFFFF;
+	height: inherit;
+}
+.mui-content{
+	background-color: #FFFFFF;
+}
+.top{
+	padding-top: 5%;
+	border-bottom: solid 1px #F3F3F3;
+	padding-bottom: 5%;
+}
+.top span:nth-child(2){
+	float: right;
+	padding-right: 5%;
+	color: #999999;
+}
+.top span:nth-child(1){
+	padding-left: 5%;
+}
+#popover{
+	height: 100px;
+	width:200px;
+}
+select{
+	margin: 0;
+	width: 40%;
+	font-size: 18px;
+	color: #0099FF;
+	margin-left: 10%;
+}
+.select{
+	width: 100%;
+	border: solid 1px #F3F3F3 !important;
+	border-radius: 10px;
+	padding-bottom: 3%;
+	padding-top: 3%;
+}
+.select i{
+	float: right;
+	font-size: 25px;
+	padding-top: 3%;
+	color: #555;
+	padding-right: 3%;
+}
+.select span{
+	padding-left: 5%;
+	color: #AAAAAA;
+}
+textarea{
+	border: none;
+	padding-top: 5%;
+	height: 80% !important;
+}
+

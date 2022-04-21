@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="../css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="../css/mui.min.css" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="../fonts/iconfont.css" />
+		<link rel="stylesheet" href="my.css" />
+	</head>
+
+	<body>
+		<div id="app">	
+			<div class="top">
+				<span>我</span>
+			</div>
+			<div class="mui-content">
+				<div class="user_container">
+					<div class="user_info">
+						<img class="photo" src="" id="photo"/>
+			
+						<dl>
+							<dt><p class="user_name">{{username}}</p></dt>
+							<dt class="lv"><span class="level">LV.{{Math.floor(exp/1000)}}</span>
+							    <div class="progress">
+	    					        <div class="exp" :style="progress"></div>
+	    				        </div>
+	    				        <div class="home">
+									<span v-tap="{method:gotomyhome}">个人主页</span>
+									<i class="icon iconfont icon-jiantouyou" ></i>
+								</div>	
+							</dt>
+							<dt class="ID">
+								<span>ID:{{id}}</span>
+								<span>人气：{{hot}}</span>
+							</dt>
+						</dl>		
+					</div>
+					<dl class="user_fans">
+						<dt>
+							<span>{{fans}}</span>
+							<span class="s1">粉丝</span>
+						</dt>
+						<dt>
+							<span>{{care}}</span>
+							<span class="s1">关注</span>
+						</dt>
+						<dt>
+							<span>{{friend}}</span>
+							<span class="s1">好友</span>
+						</dt>
+					</dl>
+					<div class="my_content">
+						<div class="my_count">
+							<svg class="icon" aria-hidden="true">
+  								<use xlink:href="#icon-zhanghu"></use>
+							</svg>
+							<span class="font">我的账户</span>
+						</div>
+						<div class="my_card">
+							<svg class="icon" aria-hidden="true">
+  								<use xlink:href="#icon-jiehunjinianrix-"></use>
+							</svg>	
+							<span class="font">纪念卡</span>
+						</div>
+					</div>
+				</div>
+				<div class="operation">
+					<div class="deal">
+						<div class="deal_content">
+							<span class="iconfont icon-gouwu1 "></span>
+							<span>松果铺子</span>
+							<i class="mui-action-back icon iconfont icon-jiantouyou"></i>
+						</div>
+						<div class="deal_content">
+							<span class="iconfont icon-huiyuan "></span>
+							<span>会员中心</span>
+							<i class="mui-action-back icon iconfont icon-jiantouyou"></i>
+						</div>
+						<div class="deal_content">
+							<span class="iconfont icon-icon--copy "></span>
+							<span>订单管理</span>
+							<i class="mui-action-back icon iconfont icon-jiantouyou"></i>
+						</div>	
+						<div class="deal_content">
+							<span class="iconfont icon-liwu  "></span>
+							<span>邀请好友得好礼</span>
+							<i class="mui-action-back icon iconfont icon-jiantouyou"></i>
+						</div>	
+						
+					</div>
+				    <div class="honor">
+						<div class="deal_content">
+							<span class="iconfont icon-xunzhang  "></span>
+							<span>勋章</span>
+							<i class="mui-action-back icon iconfont icon-jiantouyou"></i>
+						</div>	
+						<div class="deal_content">
+							<span class="iconfont icon-shoucang  "></span>
+							<span>收藏</span>
+							<i class="mui-action-back icon iconfont icon-jiantouyou"></i>
+						</div>	
+				    </div>
+				    <div class="serve">
+						<div class="deal_content">
+							<span class="iconfont icon-xingxing   "></span>
+							<span>荧光棒</span>
+							<i class="mui-action-back icon iconfont icon-jiantouyou"></i>
+						</div>	
+						<div class="deal_content">
+							<span class="iconfont icon-yijianshouji  "></span>
+							<span>意见反馈</span>
+							<i class="mui-action-back icon iconfont icon-jiantouyou"></i>
+						</div>	
+						<div class="deal_content">
+							<span class="iconfont icon-bangzhu   "></span>
+							<span>帮助中心</span>
+							<i class="mui-action-back icon iconfont icon-jiantouyou"></i>
+						</div>		
+				    </div>
+				    <div class="personal">
+						<div class="deal_content">
+							<span class="iconfont icon-gerenziliao   "></span>
+							<span>个人资料</span>
+							<i class="mui-action-back icon iconfont icon-jiantouyou"></i>
+						</div>	
+						<div class="deal_content" v-tap="{method:toSet}">
+							<span class="iconfont icon-shezhi    "></span>
+							<span>设置</span>
+							<i class="mui-action-back icon iconfont icon-jiantouyou"></i>
+						</div>							
+				    </div>
+				</div>
+			</div>
+			
+		</div>
+		<script src="../js/mui.min.js"></script>
+		<script type="text/javascript" src="../fonts/iconfont.js" ></script>
+		<script type="text/javascript" src="../js/jquery-3.3.1.min.js" ></script>
+		<script type="text/javascript" src="../js/resource.js" ></script>
+		<script type="text/javascript" src="../js/vue.min.js" ></script>
+		<script type="text/javascript" src="../js/vue_tap.js" ></script>
+		<script type="text/javascript" src="../js/regexp.js" ></script>
+		<script type="text/javascript" src="my.js" ></script>
+		<script type="text/javascript">
+			mui.init()
+		</script>
+	</body>
+
+</html>

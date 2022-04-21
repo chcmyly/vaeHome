@@ -1,0 +1,100 @@
+html{
+	height: 100%;
+}
+body{
+	height: inherit;
+	background-color: #fff;
+}
+.mui-content{
+	background-color: #fff !important;
+}
+.top{
+	width: 100%;
+	padding-top: 13px;
+	padding-bottom: 13px;
+	border-bottom: solid 1px #F3F3F3;
+	position: fixed;
+	color: #333333;
+}
+.top span:nth-child(1){
+	padding-left: 5%;
+}
+.top span:nth-child(2){
+	float: right;
+	padding-right: 5%;
+}
+.user_info{
+	padding-top: 15%;
+	width: 100%;
+}
+.user_info dl dt:nth-child(1) span:nth-child(2){
+	float: right;
+	padding-right: 25%;
+}
+.user_info dl dt{
+	padding-top: 4%;
+	padding-bottom: 4%;
+	font-size: 17px;
+	padding-left: 5%;
+}
+.user_info dl dt i{
+	float: right;
+	padding-right: 5%;
+}
+/*.user_info dl dt:nth-child(2) i{
+	padding-left: 80%;
+}*/
+.user_info dl dt:nth-child(2){
+	display: flex;
+	width: 100%;
+}
+.user_info dl dt:nth-child(2) select{
+	width: 20%;
+	padding: 0px;
+	margin: 0px;
+	margin-left: 60%;
+	color: #007AFF;
+}
+.user_info dl dt{
+	border-bottom: solid 1px #F3F3F3;
+}
+.user_info dl dt:nth-child(3) input{
+	width: 30%;
+	border: none;
+	margin: 0px;
+	padding: 0px;
+	height: auto;
+	margin-left: 33%;
+	color: #007AFF;
+	font-size: 17px;
+	text-align: left;
+}
+.user_info dl dt:nth-child(4) span:nth-child(2){
+	margin-left: 44%;
+	color: #007AFF;
+}
+.user_info dl dt input{
+	width: 30%;
+	border: none;
+	margin: 0px;
+	padding: 0px;
+	height: auto;
+	margin-left: 38%;
+	color: #007AFF;
+	font-size: 17px;
+	text-align: left;
+}
+input[type="button"]{
+	background-color: #007aff;
+	border: none;
+	color: #fff;	
+	font-size: 15px;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	height: 50px;
+	border-radius: 8px;
+	padding-left: 0px;
+	width: 60%;
+	margin-left: 20%;
+	margin-right: 20%;
+}

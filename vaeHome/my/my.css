@@ -1,0 +1,197 @@
+html{
+	height: 100%;
+}
+body{
+	height: 100% !important;
+}
+.mui-content{
+	background-color: #fff !important;
+	width: 100%;
+}
+.top{
+	width: 100%;
+	padding-top: 13px;
+	padding-bottom: 10px;
+	border-bottom: solid 1px #F3F3F3;
+	position: fixed;
+	background-color: #FFFFFF;
+}
+.top span{
+	color: #333333;
+	padding-left: 5% !important;
+}
+.user_container{
+	padding-top: 12%;
+	width: 100%;
+	background-color: #F3F3F3;
+}
+.user_container .user_info{
+	padding-top: 5%;
+	display: flex;
+	width: 100%;
+	border-bottom: solid 1px #F3F3F3;
+	padding-bottom: 2%;
+	border-top: solid 7px #F3F3F3;
+	background-color: #FFFFFF;
+}
+.user_container .user_info .photo{
+	width: 22%;
+	height: 78px;
+	border-radius: 10px;
+	border: solid #fff 4px;
+	background-color: #bbb;
+	background-image: url(../img/photo1.jpg);
+	background-size: cover;
+	margin-right: 18px;
+	margin-left: 2%;
+}
+
+.user_container .user_info .user_name{
+	color: #000000;
+	font-size: 20px;
+	margin-top: 0;
+}
+
+
+.user_container .user_info .level{
+	display: inline-block;
+	height: 22px;
+	width: 50px;
+	background-color: #fff;
+	border-radius: 3px;
+	text-align: center;
+	line-height: 22px;
+	color: #007AFF;
+	font-size: 14px;
+}
+
+.user_container .user_info .progress{
+	height: 8px;
+	background-color: rgba(255,255,255,0.5);
+	border-radius: 4px;
+	width: 35%;
+	margin-top: 2%;
+
+}
+
+.user_container .user_info dl{
+	flex-grow: 1;
+	margin-top: 5px;
+	margin-bottom: 0;
+	width: 75%;
+	float: right !important;
+
+	
+}
+
+.user_container .user_info .exp{
+	background-color: #007AFF;
+	height: 100%;
+	border-radius: 4px;
+}
+.user_container .user_info dt{
+	margin-bottom: 10px;
+}
+.user_container .user_info dt:last-child{
+	margin-bottom: 0px;
+}
+.lv{
+	display: flex;
+	margin-bottom: 0px !important;
+}
+.home{
+    margin-left: 13%;
+    color:#C7C7CC ;
+    font-size: 14px;
+}
+.ID span{
+	padding-right: 3%;
+	font-size: 15px;
+	color: #ACACB4;
+}
+.user_container .user_fans{
+	margin-top: 0;
+	margin-bottom: 0;
+	display: flex;
+	background-color: #FFFFFF;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.user_container .user_fans dt{
+		flex-grow: 1;
+		
+}
+.user_container .user_fans span{
+	color: #000000;
+	font-size: 15px;
+	display: block;
+	text-align: center;
+}
+.user_container .user_fans .s1{
+	color: #8F8F94;
+}
+.my_content{
+	display: flex;
+	font-size: 40px;
+	width: 100%;
+	border-top: solid 5px #F3F3F3 ;
+	background-color: #FFFFFF;
+}
+.my_content .font{
+	font-size: 15px;
+	align-content: center;
+	vertical-align: middle;
+	margin-top: 2px;
+}
+.my_count{
+    width: 50%;
+    padding-left: 10%;
+    border-right: solid 1px #F3F3F3;
+    padding-top: 3%;
+	padding-bottom: 3%;
+}
+.my_card{
+    width: 50%;
+    padding-left: 10%;
+    padding-top: 3%;
+	padding-bottom: 3%;
+}
+.deal{
+	width: 100%;
+	border-top: solid 5px #F3F3F3;
+}
+.deal_content{
+	padding-top: 4%;
+	padding-bottom: 4%;
+	border-bottom: solid 1px #F3F3F3;
+}
+.deal_content i{
+	float: right;
+	padding-right: 10% !important;
+	color:#C7C7CC ;
+	font-size: 20px;
+}
+.deal_content .iconfont{
+	padding-right: 2%;
+	padding-left: 2%;
+}
+.honor{
+	width: 100%;
+	border-top: solid 5px #F3F3F3;	
+}
+.serve{
+	width: 100%;
+	border-top: solid 5px #F3F3F3;	
+}
+.personal{
+	width: 100%;
+	border-top: solid 5px #F3F3F3;	
+	border-bottom: solid 10px #F3F3F3;	
+}
+.icon {
+  width: 1em;
+  height: 1em;
+  vertical-align: -0.15em;
+  fill: currentColor;
+  overflow: hidden;
+}
